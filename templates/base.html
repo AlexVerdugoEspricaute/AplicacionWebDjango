@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {% load static %}
+    {% load crispy_forms_tags %}
     <header>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,14 +39,14 @@
             {% if user.is_authenticated %}
             <h4 style="margin: 5px;"> Bienvenido {{ user.username }} !! </h4>
                 <li class="nav-item">
-                <a href="{% url 'logout' %}" class="btn btn-danger" style="margin: 5px;">Cerrar</a>
+                <a href="{% url 'logout' %}" class="btn btn-outline-danger" style="margin: 5px;">Cerrar</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                <a href="{% url 'login' %}" class="btn btn-primary" style="margin: 5px;">Ingresar</a>
+                <a href="{% url 'login' %}" class="btn btn-outline-primary" style="margin: 5px;">Ingresar</a>
                 </li>
                 <li class="nav-item">
-                <a href="/registro" class="btn btn-danger" style="margin: 5px;" >Registrate</a>
+                <a href="/registro" class="btn btn-outline-danger" style="margin: 5px;" >Registrate</a>
                 </li>    
                 {% endif %}
             </ul>
