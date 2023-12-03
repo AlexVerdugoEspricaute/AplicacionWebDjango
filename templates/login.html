@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Ingresar{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="card mx-auto text-center" style="width: 20rem; margin-top:50px;">
+    <h2 >Ingresar</h2> {{ msg }}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary" style="margin:10px ;">Ingresar</button>
+    </form>
+</div>
+
+{% endblock %}

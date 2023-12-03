@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<body>
+  <div class="card text-center" style="width: 100%; padding: 1%; margin-top:5px;">
+    <h3 class="container-fluid text-center"> Motos Todo Terreno</h3>
+  </div>
+  <section class="d-flex justify-content-center" style="display: flex ; margin-bottom: 200px;">
+    <div class="card text-center" style="width: 500px; margin: 10px;">
+      <img src="{%static 'images/YamahaTracer9.jpg' %}" class="card-img-top" alt="Imagen de moto Yamaha Tracer 9" />
+      <div class="card-body">
+        <h5 class="card-title">YAMAHA TRACER 9</h5>
+        <p>Esta moto se ha diseñado para ofrecerte una vía de escape de la rutina diaria. Y gracias a su
+          depósito de 18 litros, esta Sport Tourer está hecha para llegar muy lejos. Decídete por la
+          Tracer 900. Y deja que se te acelere el pulso. El nuevo diseño de paneles del chasis de alta
+          calidad proporciona una apariencia más refinada, mientras que la mejora de la ergonomía y el
+          parabrisas regulable de mayor tamaño garantiza un mayor confort en la conducción.</p>
+        <h5 class="card-price">$5.000.000</h5>
+        <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+      </div>
+    </div>
+  </section>
+</body>
+{% endblock %}

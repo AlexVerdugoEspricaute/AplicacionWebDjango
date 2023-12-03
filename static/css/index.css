@@ -1,0 +1,12 @@
+:root {
+    --text: #000000;
+    --text-alternate: #ffffff;
+    --background: #d3faff;
+    --primary: #1336af;
+    --secondary: #872020;
+    --accent: #b1fdef;
+}
+
+html, body {
+    background-color: var(--background);
+}

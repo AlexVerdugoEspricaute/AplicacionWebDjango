@@ -1,0 +1,44 @@
+:root {
+  --text: #000000;
+  --text-alternate: #ffffff;
+  --background: #d3faff;
+  --primary: #1336af;
+  --primary-hover: #0d2576;
+  --secondary: #872020;
+  --accent: #b1fdef;
+}
+
+html,
+body {
+  background-color: var(--background);
+}
+
+#navbar {
+  background-color: #ffffff !important;
+}
+
+section {
+  margin-top: 10px;
+}
+
+table tr td,
+table tr th {
+  border: 1px solid #000000 !important;
+}
+
+#CTA {
+  background-color: var(--primary) !important;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-alternate);
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+#CTA:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+

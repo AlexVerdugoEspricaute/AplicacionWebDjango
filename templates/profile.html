@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    {% if user.is_authenticated %}
+       <h4 style="margin: 30px;"> Hola {{ user.username }} </h4>
+        <a href="/signout" class="btn btn-danger">Cerrar</a>
+    {% else %}
+        <a href="/signin" class="btn btn-primary">Ingresar</a>
+        <a href="/signup" class="btn btn-danger">Registrarse</a>
+    {% endif %}
+
+
+{% endblock %}

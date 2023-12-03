@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+  
+  <body>
+    <main>
+      <div class="card text-center" style="width: 100%; padding: 1%; margin-top:5px">
+        <h3 class="container-fluid" > Motos Deportivas</h3>
+        </div>
+      <section style="display: flex; margin-bottom: 200px;">
+        <div class="card text-center" style="width: 100%; margin: 10px;">
+          <img src="{%static 'images/YamahaR15.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R15" />
+          <div class="card-body"> 
+            <p> New R15 V4 es la nueva integrante de la familia Superdeportiva R-World de Yamaha, convirtiéndola en la más avanzada de su segmento por sus elementos de equipamiento, seguridad y tecnología que posee. Posee sistema Y-Connect te permitirá estar en contacto directo  con tu New R15 V4 en todo momento gracias a la conexión que tiene con el celular del usuario. </p>
+            <div class="product">
+              <h5 class="card-title">YAMAHA R15 v4</h5>
+              <h5 class="card-price">$2.000.000</h5>
+              <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 100%; margin: 10px;">
+          <img src="{%static 'images/YamahaR3.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R3" />
+          <div class="card-body">
+            <p> Esta superdeportiva ligera presenta una estética completamente renovada de inspiración MotoGP® que la convierte en la 300 más radical tanto en las calles como en circuito. Su nueva carrocería estilizada recuerda a la máquina YZR-M1 MotoGP® de Yamaha, mientras que la estética agresiva de su doble faro LED destaca la más pura esencia de la serie R. La nueva horquilla invertida de 37 mm de altas especificaciones te proporciona una mejor sensación y respuesta en cuanto a suspensión, mientras que el depósito de combustible más bajo y la posición revisada del manillar mejoran la ergonomía del conductor para ofrecerte mayor confort y control. Escucha la llamada y adéntrate en el Mundo R.  </p>
+            <h5 class="card-title">YAMAHA R3 v1</h5>
+              <h5 class="card-price">$3.000.000</h5>
+              <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 100% ;margin: 10px;">
+          <img src="{%static 'images/YamahaR7.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R7" />
+          <div class="card-body">
+            <p> Una superdeportiva de nueva generación con el estilo legendario de Yamaha que combina un avanzado motor CP2 con un chasis ultradelgado y ligero para proporcionar un rendimiento de torque tanto en la pista como en la calle. La nueva YZF - R7 está destinada a aquellos que buscan un diseño puramente Supersport con un excitante rendimiento para su día a día.   </p>
+            <h5 class="card-title">YAMAHA R7 v1</h5>
+              <h5 class="card-price">$4.000.000</h5>
+              <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+{% endblock %}

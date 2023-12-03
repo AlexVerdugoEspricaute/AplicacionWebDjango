@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <div class="card mx-auto text-center" style="width: 18rem; margin-top:50px;">
+    <h2>Registrate</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+            <p>
+            {{ field.label_tag }}<br>
+            {{ field }}
+            {% for error in field.errors %}
+                <p class="text-center" style="color: red;">{{ error }}</p>{{ msg1 }}
+            {% endfor %}
+            </p>
+        {% endfor %}
+        <button type="submit" class="btn btn-danger" style="margin:10px;">registrarse</button>
+    </form>
+</div>
+    <footer class="fixed-bottom">
+        <div class="card text-center">
+            <div class="card-body">
+              <a href="/"><h5 class="card-title">Verdugo import</h5></a>
+              <a href="mailto:elcorreoquequieres@correo.com"><img src="{% static 'images/logoEmail.png' %}" aria-current="page" alt="E-Mail"></a>
+              <a href="https://www.facebook.com/"><img src="{% static 'images/logoFacebook.png' %}" aria-current="page" alt="Facebook"></a>
+              <a href="https://www.instagram.com/"><img src="{% static 'images/logoInstagram.png' %}" aria-current="page" alt="Instagram"></a>
+              </div>
+        </div>
+      </footer>
+{% endblock %}

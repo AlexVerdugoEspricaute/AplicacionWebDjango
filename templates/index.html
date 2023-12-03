@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{%load static%}
+
+  <body>
+    <div class="card text-center" style="width: 100% ; padding: 1%; ; margin-top: 5px;">
+      <h4 class="container-fluid text-center" id="id1"> Nos dedicamos 100% a la venta de motocicletas de la marca Yamaha en 4 tipos distintos para elegir.</h4>
+      </div>
+    <main>  
+      <section style="display: flex">
+        <div class="card text-center mb-3" style="width: 600PX ; margin: 10px">
+          <img src="{% static 'images/YamahaFz150.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha Fz150"/>
+          <div class="card-body">
+            <h5 class="card-title">Calle</h5>
+            <a href="{% url 'calle' %}" id="CTA" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 600PX ; margin: 10px" >
+          <img src="{% static 'images/YamahaR7.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R7"/>
+          <div class="card-body">
+            <h5 class="card-title">Deportivas</h5>
+            <a href="{% url 'deportivas' %}" id="CTA" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 600PX ; margin: 10px">
+          <img src="{% static 'images/YamahaTracer9.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha Tracer 9"/>
+          <div class="card-body">
+            <h5 class="card-title">Todo Terreno</h5>
+            <a href="{% url 'terrenos' %}" id="CTA" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 600PX ; margin: 10px">
+          <img src="{% static 'images/YamahaNmax.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha Nmax"/>
+          <div class="card-body">
+            <h5 class="card-title">Scooter</h5>
+            <a href="{% url 'scooters' %}" id="CTA" class="btn btn-primary ">Ver mas</a>
+          </div>
+        </div>
+        </section>
+    </main>
+
+  </body>
+  {% endblock %}

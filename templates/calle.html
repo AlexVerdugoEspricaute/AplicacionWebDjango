@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+  {%load static%}
+
+<body>
+  <main>
+    <div class="card text-center" style="width: 100%; padding: 1%; margin-top:5px">
+      <h3 class="container-fluid" > Motos de Calle</h3>
+      </div>
+    <section style="display: flex; margin-bottom: 200px;">
+      <div class="card text-center" style="width: 100%; margin: 10px;">
+        <img src="{%static 'images/YamahaFz150.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R15" />
+        <div class="card-body"> 
+          <p>  FZN-150 está pensada para quienes quieren recorrer la ciudad con
+            la mayor eficiencia, comodidad y libertad posible. Este modelo
+            incorpora además tecnología Blue Core para lograr una máxima
+            eficiencia del motor, reduciendo de manera importante las
+            emisiones de gases y el consumo de combustible, sin dejar de lado
+            la agresividad y lo elegante de su diseño </p>
+          <div class="product">
+            <h5 class="card-title">YAMAHA FZ 15</h5>
+            <h5 class="card-price">$1.000.000</h5>
+            <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="card text-center" style="width: 100%; margin: 10px;">
+        <img src="{%static 'images/YamahaFZ25.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R3" />
+        <div class="card-body">
+          <p> La Yamaha FZN-25 es la moto con mejor performance urbana del
+            mercado. Tecnología de punta japonesa para superar todos los
+            obstáculos de la ciudad actual. Los pilotos de estas motocicletas
+            Yamaha vivirán la filosofía del “Handling” de la marca, con una
+            conducción intuitiva, podrán girar sin esfuerzo, tomar curvas con
+            precisión y con dinámicas propias de la saga FZ.  </p>
+          <h5 class="card-title">YamahaFZ25</h5>
+            <h5 class="card-price">$2.000.000</h5>
+            <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+        </div>
+      </div>
+      <div class="card text-center" style="width: 100% ;margin: 10px;">
+        <img src="{%static 'images/YamahaMt03.jpg' %}" class="card-img-top" alt="Imagen moto Yamaha R7" />
+        <div class="card-body">
+          <p> La Yamaha Mt-03 está pensada para quienes quieren recorrer la
+            ciudad con la mayor eficiencia, comodidad y libertad posible. Este
+            modelo incorpora además tecnología Blue Core para lograr una
+            máxima eficiencia del motor, reduciendo de manera importante las
+            emisiones de gases y el consumo de combustible, sin dejar de lado
+            la agresividad y lo elegante de su diseño   </p>
+          <h5 class="card-title">YAMAHA MT 03</h5>
+            <h5 class="card-price">$3.000.000</h5>
+            <a href="" class="btn btn-primary" id="CTA">Ir al carrito</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  </body>
+
+{% endblock %}
