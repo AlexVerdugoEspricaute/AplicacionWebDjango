@@ -1,6 +1,6 @@
 # AplicacionWebDjango
 
-Aplicacion de motocicletas, el cual tiene login, registro y otras funciones, este projecto lo hice con Django, Javascript, ccs3, bootstrap5, base de datos en MySql en XAMPP/PHP y python.
+Desarrollé una aplicación de motocicletas que incluye funciones de inicio de sesión, registro y otras características. Este proyecto fue creado utilizando Django, Python, CSS3, Bootstrap 5 y una base de datos MySQL alojada en XAMPP/PHP.
 
 
 ---Para poder correrlo se debe instalar el archivo requirements.txt con : pip install -r requirements.txt  y crear la base de datos.---
